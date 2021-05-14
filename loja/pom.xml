@@ -38,10 +38,11 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.papertrailapp</groupId>
-			<artifactId>logback-syslog4j</artifactId>
-			<version>1.0.0</version>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>1.5.2</version>
 		</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-feign -->
 		<dependency>
@@ -49,8 +50,6 @@
 			<artifactId>spring-cloud-starter-feign</artifactId>
 			<version>1.4.7.RELEASE</version>
 		</dependency>
-
-
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
