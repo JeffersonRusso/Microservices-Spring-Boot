@@ -1,0 +1,18 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: account-apigateway
+
+  cloud:
+    gateway:
+
+      routes:
+        - id: loja
+          uri: http://localhost:8080/
+          predicates:
+            - Path=/compra
+        - id: fornecedor
+          uri: http://localhost:8081/
+          predicates:
+            - Path=/produto

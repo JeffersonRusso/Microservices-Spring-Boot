@@ -5,7 +5,7 @@
         <syslogHost>logs2.papertrailapp.com</syslogHost>
         <port>10616</port>
         <facility>USER</facility>
-        <suffixPattern>my-app1: %logger %msg</suffixPattern>
+        <suffixPattern>LOJA: %logger %msg</suffixPattern>
     </appender>
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
@@ -14,9 +14,8 @@
                 %msg%n</pattern>
         </encoder>
     </appender>
-    <root level="DEBUG">
+    <root level="INFO">
         <appender-ref ref="STDOUT" />
         <appender-ref ref="PAPERTRAIL" />
     </root>
 </configuration>
-
